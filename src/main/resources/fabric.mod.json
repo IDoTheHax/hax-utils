@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "hax-utils",
+  "version": "${version}",
+  "name": "hax-utils",
+  "description": "IDoTheHax Utilities",
+  "authors": [
+    "IDoTheHax"
+  ],
+  "contact": {
+    "website": "idothehax.com",
+    "repo": "https://github.com/IDoTheHax/hax-utils"
+  },
+  "license": "unlicense",
+  "icon": "assets/hax-utils/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.idothehax.haxutils.client.HaxUtilsClient"
+    ],
+    "main": [
+      "net.idothehax.haxutils.HaxUtils"
+    ]
+  },
+  "mixins": [
+    "hax-utils.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
